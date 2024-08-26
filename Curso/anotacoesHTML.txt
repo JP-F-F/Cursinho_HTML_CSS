@@ -1,0 +1,61 @@
+---------coisas uteis HTML----------------------------------------
+pra mostrar esse sinal "<" sem colocar ele em si se usa "&lt;"
+
+pra colocar emoji primeiro a gente coloca &#xcodigoEmoji;
+
+e pra usar ">" se usa "&gt"
+
+as tags de lista tem um parametro "type", que altera a numeração da lista.
+
+em links é interessante usar os parâmetros "target" que faz o link ser aberto numa nova janela. E o "rel" que explica para o site Semânticamente que é um link externo com o "external".
+Já pra links internos usamos o "next" para dizer q o link leva pra uma próxima pag do site, E o "prev" pra dizer que leva para uma página anterior do site(essas duas coisas se indicam no "rel").
+pra links externos que não tem seu aval(caso vc n queira que o mecanismo de busca perpetue essa busca) usamos o "nofollow" no "rel".
+Para indicar a pasta anterior na hora de colocar um caminho do link interno, usamos "../nomePasta"
+
+o parámetro "cite" usado na tag blockcote serve para indicarmos de onde tiramos essa sitação, serve mais como um mecanismo pra dar créditos a fonte original
+
+caso uma imagem esteja numa subPasta da pasta do projeto, basta colocar o caminho da imagem na pasta.
+EX: logosPikas/logoOhara.jpg
+
+para fazer um link baixavel usamos o "type:aplication/formatoArquivo". Podemos usar também o parametro "download:nomeArquivo" mas esse n é tão garantido que funcione
+
+para fazer um texto aparecer sob algo no site via HTML, só usar o parametro "title"
+
+usamos a tag <picture> para adicionar imagens dinânicas, dentro dela colocamos uma imagem pricipal <img src="imagem"> e usamos a tag <source> para alterar a imagem.
+    -Explicando a tag <source> nela temos os parametros:
+    1- media"(min_width:100px)" que usamos para definir quando a imagem deve mudar.
+    2- srcset="imagemTal.png" Aqui colocamos a imagem que vai aparecer de acordo com o media
+    3- Type="image/png" Aqui definimos o tipo do arquivo.
+
+o parametro "preload" recebe apenas os seguintes coisas "auto, metadata, none", esse parametro serve para esccolher como o arquivo será carrregado
+    -Explicando o uso:
+    1- "auto" só vai considerar que o site terminou de carregar quando a tag em específico (no caso "audio") tiver carrregado
+    2- "metadata" vai carregar somente as informaçoes cruciais do arquivo (no caso audio=duracao, nome e etc)
+    3- "none" só vai carregar o arquivo quando o usuário pedir(no casp de audio, apertar o play)
+
+----------comandos marotos-------
+crtl + Space = mostra uma lista das imagens na pasta do arquivo
+
+segurar alt + clicar com o mouse, faz vc digitar em várias linhas
+
+--------------Dicas Gerais--------------------------
+favicon � aqueles �cones que ficam na aba do navegador
+
+uma coisa que eu percebi estudando esse curso, é que ter a mesma foto, audio, video e etc, em vários tamanhos e formatos de arquivo é importante, pois tem arquivos q não funcionam em certos navegadores e certos tamanhos atrapalham na navegação em outros dispositivos.
+
+
+
+iconarquive � o lugar para se achar �cones :)
+
+Pesquisar dps sobre SEO(Search Engine Otimization)
+
+favicon.cc � um bom site pra desenhar favicons
+
+programa handbrake é bem útil pra converter aquivos de vídeo em outros tipos de arquivo, talvez sirva pra editar tbm? talvez mexa com outras coisas além de vídeo.
+
+-unsplash.com
+-pexels
+
+favicon.io � o site pra tranformar arquivos de imagem e etc(png,jpeg) em formato de imagem de �cone(.ico).
+
+emojipedia � o lugar pra achar as tags de emojis

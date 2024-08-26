@@ -1,0 +1,31 @@
+----------------coisas sobre CSS----------------
+a gente usa o @ para definir regras no nosso CSS, EX: @charset "utf-8";
+regras sempre são escritas no topo do arquivo.
+
+elementos podem ter mais de uma classe, fica assim ó: <h1 class="destaque titulo"></h1>
+um elemento tambem pode ter um id e uma class: <h1 id=""h1principal class="destaque"></h1>
+
+
+
+-----------dicas gerais---------
+Estude psicologia das cores.
+Cores tem um grande impacto no subconsciente do consumidor, basicamente use isso ala marketing e pra ter uma identidade forte no seu site.
+
+categorias de fontes:
+    1 - Serifadas: são aquelas fontes que tem serifa, aqueles detalhes meio "chique/vintage".
+    2 - Sans-serif: são aquelas fontes sem serifa.
+    3 - Monoespaçadas: são aquelas fontes que tem a mesma largura em todos os caracteres.
+    4 - Handwriting: são aquelas fontes que tentam simular a caligrafia humana.
+    5 - Display: São aquelas fontes que não se preocupam muito com as questões anatomicas de tipografia, geralmente são fontes super estilisadas
+
+------Sites/Ferramentas úteis----------------
+adobe color = sitezin pra fazer paletas de cores
+paletton = o memo da linha de cima
+coolors
+CSS web safe font combination = achar combinações de fontes para suas páginas
+fonts.google.com
+Fonts ninja (extensão)
+whatfontis.com (site)
+fontsquirrel.com
+myfonts.com
+enkarsati = site pra achar código de simbolos

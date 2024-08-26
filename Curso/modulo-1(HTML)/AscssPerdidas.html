@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Essas CSS tão maluca</title>
+</head>
+<body>
+    <h1>Usando links pra download</h1><!--essa parte é meramente ilustrativa eu n fiz nenhum link real baixavel-->
+    <ul>
+        <li><a href="#">Baixar alguma coisa</a></li>
+        <li><a href="#">Baixar Vírus Bolado</a></li>
+    </ul>
+    <hr>
+    <h1>Dinamicas de imagem, imagens Dinamicas</h1>
+    <p>a ideia aqui é fazer imagens que se adaptam a dispositivos difentes, algo bem mobile first <br> Vai diminuindo a barra do navegador pra tu ver a mágica acontecendo</p>
+    <picture><!--essa tag lê as coisas dbaixo pra cima, a img é a base e os sources vão sendo adiconasdos em cima d forma decrescente-->
+        <source media="(max-width:750px)" srcset="Imagens/imagemCellphone.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="Imagens/imagemTablet.png" type="image/png">
+        <img src="Imagens/imagemPC.png" title="Imagem pra telas de pc" alt="Imagem mágica">
+    </picture>
+    <h1>Usando audios</h1><!--não usei nenhum audio n, mas aqui tá a forma simples de fazer-->
+    <p>abaixo é possível ver a tag &lt;audio&gt; em ação<br> para que o audio toque sozinho se usa o parametro "autoplay", e para aparecer o menu de controle de audio se usa "controls" <br>Essa tag suporta os formatos de audio "MP3, WAV, OGG"</p>
+    <audio src="#" controls autoplay></audio>
+    <p>agora aqui a gente vai ver a forma mais complexa de fazer esse lance de usar audios(entra no código pra ver melhor) <br> Dá pra usar o parametro "loop" dentro da tag &lt;audio&gt; pra reiniciar o audio, se tiver mais de um &lt;source&gt; dentro da tag &lt;audio&gt; ele vai tentar carregar na ordem disposta dentro da tag(não quando terminar um audio ele n vai começar o outro... eu acho) </p>
+    <audio preload="metadata" controls>
+        <source src="#" type="audio/mpeg">
+        <source src="#" type="audio/ogg">
+    </audio>
+    <hr>
+    <h1>Botano vídeos</h1>
+    <h2>padrões de vídeos mais utilizados por navegadores</h2>
+    <ol type="I"> 
+        <li>MP4</li>
+        <li>M4v(esse aqui meio q tá com MP4)</li>
+        <li>webn(esse aqui a qualidade é uma merda, mas é o mais leve)</li>
+        <li>ogv</li>
+    </ol>
+    <h2>Hospedando vídeos localmente</h2>
+    <p>Essa é a forma simples de fazer, os parametros usados em audio tambem pode ser aplicados aqui como por exemplo o "controls", claro n tá aparecendo nenhum vídeo pq eu n usei nenhum.</p>
+    <video src="#" controls></video>
+    <p>cara a forma complexa de fazer é a mesma q com as tags &lt;audio&gt; e &lt;picturre&gt; ó <br><strong>Detalhe importante</strong> botar vídeos dessa forma pode pesar muuuito o site dependendo do tamanho do arquivo, consequentemente aumentando o preço da hospedagem</p>
+    <video src="" controls>
+        <source src="#" type="video/mp4">
+            <!--aí aqui você vai botando o mesmo vídeo em formas diferentes e tal-->
+    </video>
+    <hr>
+    <h1>Hospedando Videos de forma externa </h1>
+    <h2>usano código de incorporação</h2>
+    <p>Pra inserir o vídeo abaixo a gente foi no <strog>youtube</strog>, escolheu um vídeo, clicou em compartilhar e escolheu a forma "incorporar". <strong>sitezinho pra hospedar vídeos muito interessante VIMEO</strong></p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OQb_MH4UtIk?si=wVJJealoFZN-Ib36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <hr>
+    <h1>links navegação</h1>
+    <p>Voltando a <a title="Usando a tag a" rel="prev" href="htmlCrusaders.html">Cruzada</a></p>
+    <p>Indo pra <a rel="prev" href="index_ex002.html">Segunda</a> aula</p>
+    <p>o <a rel="prev" href="index_ex001.html">inicio</a> de tudo</p>
+    <p>Aqui a gente começa a ficar mais <a rel="next" href="FicandoNoEstilo.html">Estiloso</a></p>
+    <p>um novo começo pique <a href="Modulo-2(CSS)/Beggin-ing.html">Reboot</a></p>
+</body>
+</html>
