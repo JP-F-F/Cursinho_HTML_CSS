@@ -5,6 +5,9 @@ regras sempre são escritas no topo do arquivo.
 elementos podem ter mais de uma classe, fica assim ó: <h1 class="destaque titulo"></h1>
 um elemento tambem pode ter um id e uma class: <h1 id=""h1principal class="destaque"></h1>
 
+USANDO VÁRIAVEIS EM CSS:
+Pra mais detalhes olha o documento "ModeloGuanabara.html"
+O ideal na criaçaõ de váriaveis pra começar, é declararmos no nosso CSS a pseudo-classe "root" pois é nela que vamos por as váriaveis, a gente declara uma váriavel assim "--NomdeDaVariavel
 
 
 -----------dicas gerais---------
@@ -29,3 +32,4 @@ whatfontis.com (site)
 fontsquirrel.com
 myfonts.com
 enkarsati = site pra achar código de simbolos
+mockflow =  site pra brainStorm de layouts de site

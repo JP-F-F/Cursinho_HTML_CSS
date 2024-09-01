@@ -1,0 +1,77 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray;
+    margin: 0px;
+}
+header{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+main{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 0px;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.500);
+}
+
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 0px;
+}
+footer > p {
+    margin: 0px;
+}
+
+article{
+    background-color: lightgray;
+    padding: 5px;
+
+}
+article > aside{
+    background-color: rgb(165, 165, 165);
+}
+
+nav{
+    background-color: rgb(102, 102, 102);
+    padding: 3px;
+    /* box-shadow: deslocamento horizontal, deslocamento vertical, espalhamento, spread e cor*/
+    box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.500);
+    /* outra forma de fazer sombras: dá pra adicionar bo-shadow pelo dev-tools(f12) */
+
+}
+
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 30px;
+    text-align: center;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+#bola{
+    height: 100px;
+    width: 100px;
+    background-color: bisque;
+    margin: 10px;
+    border-radius: 50%;
+}
+#BordaPersonalizada{
+    border: 12px solid black;
+    padding: 10px;
+    /* aqui a gente bota o arquivo da borda personalizada, desse jeito a imagem escolhida provavelmente vai ficar errada */
+    border-image-source: url('#');
+    /* por isso a gente vem aqui e usa o slice e o repeat pra arrumar */
+    border-image-slice: 27px;
+    border-image-repeat: repeat;
+    /* a seguir temos a forma de simplificar tudo isso
+    border-image: aí a gente escreve os paramentros na ordem que tá ali em cima
+    EX: border-image: url('nomeDoArquivo') 27 repeat */
+}
