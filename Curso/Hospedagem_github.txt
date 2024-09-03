@@ -1,0 +1,9 @@
+Primeiro a gente vai no repositório que tem o arquivo que queremos hospedar.
+na página do repositório a gente vai em settings.
+Aí a gente procura a parte do github pages, aí a gente vai lá e escolhe um tema.
+uma das formas da gente ver o arquivo que queriamos estar hospedando, é colocando na aba do navegador o caminho do arquivo no fim da URL
+EX: repojuan.github.io/html-css/exercicios/exercicio1/html1.html.
+
+o readme tambem aceita links <a>, ent quando abrir a página inicial do pages do nosso repo, é so deixar um link lá pra página principal.
+
+pra deixar direto um arquivo pra abrir sem ser escolhendo um tema, a gente bota no source a branch que a gente quer hospedar. 
