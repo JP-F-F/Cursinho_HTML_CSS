@@ -1,0 +1,100 @@
+div#imagemRepetitiva{
+    width: 125px;
+    height: 250px;
+    border: 2px solid black;
+    background-image: url('https://static.wikia.nocookie.net/vagabond/images/2/23/Musashi_getting_cheeks_pinched.jpg/revision/latest/scale-to-width-down/250?cb=20220613223933');
+    background-size: 125px 125px;
+    background-repeat: repeat-y
+}
+div.quadrado{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+    width: 200px;
+    height: 200px;
+}
+div#q1{
+    background-color: skyblue;
+}
+div#q2{
+    background-image: linear-gradient(to bottom, yellow, red);
+
+}
+div#q3{
+    background-image: url('imagens/pattern003.png');
+}
+
+div.bloco{
+    height: 150px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 10px;
+    background-image: url('imagens/wallpaper002.jpg');
+}
+
+div#b1{
+    background-position: left top;
+}
+div#b2{
+    background-position: left center;
+}
+
+div#b3{
+    background-position: right bottom;
+}
+
+div#imagemPosicionada{
+    border: 2px solid black;
+    background-image: url('https://static.wikia.nocookie.net/vagabond/images/2/23/Musashi_getting_cheeks_pinched.jpg/revision/latest/scale-to-width-down/250?cb=20220613223933'); 
+    background-size: 125px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 40vh;
+    background-color: lightgray;
+    margin: 20px;
+}
+
+#fakeBody{
+    background-color: black;
+    background-image: url('imagens/wallpaper002.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+    /* usando a shortHand de background
+        color -> image -> position -> repeat -> [size] -> attachment
+    */
+
+}
+div#fakeMain{
+    background-color: white;
+    max-width: 450px;
+    padding: 10px;
+    margin: auto;
+    border: 2px solid blue;
+    border-radius: 10px;
+   
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#container{
+    position: relative;
+    height: 500px;
+    background-color: purple;
+    background-image: url('imagens/target001.png');
+    background-size: 100% 100%;
+}
+#conteudo{
+    background-image: url('imagens/target001.png');
+    background-size: 100% 100%;
+    height: 200px;
+    background-color: yellow;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

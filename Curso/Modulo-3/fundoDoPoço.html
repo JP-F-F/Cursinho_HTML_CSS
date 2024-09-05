@@ -5,36 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="pocobunito.css">
     <title>modulo-3</title>
-    <style>
-        body{
-            background-image: url('imagens/wallpaper001.jpg');
-        }
-        div.quadrado{
-            display: inline-block;
-            border: 2px solid black;
-            border-radius: 10px;
-            background-color: lightgray;
-            width: 300px;
-            height: 300px;
-        }
-        div#q1{
-            background-color: skyblue;
-        }
-        div#q2{
-            background-image: linear-gradient(to bottom, yellow, orange);
-
-        }
-        div#q3{
-            background-image: url('imagens/pattern003.png');
-        }
-
-    </style>
 </head>
 <body>
     <h1>Formas de fazer fundo de sites</h1>
+    <p>esse capitulo todo foca bastante na parte de fazer o fundo do site</p>
     <div class="quadrado" id="q1"></div>
     <div class="quadrado" id="q2"></div>
     <div class="quadrado" id="q3"></div>
+
+    <h1>Usando imagens de fundo que se repetem</h1>
+    <p>Ó aqui tamo usando uma coisa de CSS pra deixar uma imagem se repetindo duma forma adequada ao tamanho da div, se vc olhar no style dessa pagina, essa div tem uma conf de background-size <br> aqui a gente também usou a propriedade background-repeat pra definir como deve ser a repetição da imagem</p>
+    <div id="imagemRepetitiva"></div>
+
+    <h1>Usando o background-position</h1>
+    <p>cara basicamente aqui a gente definiu onde que vai ser o ponto inicial de carregamento e tal de cada imagem, por exemplo a 3º tá começando da parte de baixo há direita</p>
+    <div class="bloco" id="b1"></div>
+    <div class="bloco" id="b2"></div>
+    <div class="bloco" id="b3"></div>
+    <h2>Treinando as positions</h2>
+    <div id="imagemPosicionada"></div>
+
+    <main id="fakeBody">
+        <div id="fakeMain">
+            <h1>Usando background-size</h1>
+            <p>Não sei ainda direito oq o guanabara quer com isso mas eu ainda vou descobrir, tlgd, mó doidera, o cara tá ensinando umas conf bem bacana até pprt <br> Mano no <strong>background-size</strong> tem dois valores muito importantes, sendo eles:</p>
+            <dl>
+                <dt>Contain</dt>
+                <dd>Basicamente vai mostrar 100% da imagem sem corte nenhum, o que pode fuder um pouco pq ele não se adapta muito bem</dd>
+                <dt>Cover</dt>
+                <dd>Basicamente ele vai cobrir a tela inteira com a imagem mesmo que ele tenha cortar ela um pouco, também não resolve problemas de responsividade</dd>
+            </dl>
+            <h2>Agora bora usar background-attachment</h2>
+            <p>Basicamente agora vamos falar dos vinculos dos nossos backs dos grounds, ou seja se ele está vinculado da um conteúdo ou fixo na tela, esse aí tem dois valores principais também:</p>
+            <dt>
+                <dl>Scroll</dl>
+                <dd>O fundo vai rolar junto com o conteudo</dd>
+                <dl>Fixed</dl>
+                <dd>Ele deixa o fundo o fixo, sem quebrar o site</dd>
+            </dt>
+            <p>O shortHand da conf background funciona assim básicamente: color -> image -> position -> repeat -> [size] -> attachment <br> <strong>Adendo!!!</strong> tem chances do size não funcionar nessa shortHand!!!!</p>
+        </div>
+    </main>
+    <br>
+    <h1>Bora lá centralizar verticalmente</h1>
+    <p>agora o mano vai ensinar a centralizar caixas verticalmente, o cara do nada meteu um transform, que é quando você altera uma caixa tranformando ela</p>
+    <p>o container geralmente tem uma posição relativa</p>
+    <p>Já o conteudo vai ter uma posição absoluta, quando um elemento ganha a posição de absoluto, é possível configurar duas propriedades, sendo elas <strong>Left e Top</strong></p>
+    <section id="container">
+        
+        <article id="conteudo">
+ 
+        </article>
+    </section>
 </body>
 </html>
