@@ -1,0 +1,19 @@
+@charset "UTF-8";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+table{
+    width: 400px;
+    border-collapse: collapse;
+    border: 5px dashed peru; 
+}
+td{
+    border: 2px solid black;
+    padding: 8px;
+}
+td.dado{
+    background-color: tomato;
+}
+tr.linha{
+    background-color: crimson;
+}
