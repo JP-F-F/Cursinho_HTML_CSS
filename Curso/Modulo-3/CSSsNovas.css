@@ -18,16 +18,27 @@ table#teste1 td{
 table#test2{
     width: 500px;
     border-collapse: collapse;
+    position: relative;
 
 }
 table#test2 td, th{
     border: 2px solid black;
     padding: 10px;
 }
+thead > tr > th{
+    position: sticky;
+    top: -1px;
+    background-color: gray;
+    border: 2px solid black;
+}
 caption{
     font-size: 2em;
     font-weight: bold;
     padding: 10px;
+    background-color: lightgray;
+}
+tbody > tr:nth-child(odd){
+    /* dá pra usar os valores odd e even pra dizer que vc quer q as linhas par sejam afetadas ou as impares sendo odd = impar e even = par*/
     background-color: lightgray;
 }
 thead, tfoot{
