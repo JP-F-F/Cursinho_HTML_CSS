@@ -14,18 +14,18 @@
     <ol type="1">HIERARQUIA DE TABELAS (simples)
         <li>Table (&lt;table&gt;)</li>
         <li>Table rows(&lt;tr&gt;)</li>
-            <ol>
+            <ol type="i">
                 <li>Table header</li>
                 <li>Table data(&lt;td&gt;)</li>
             </ol>
     </ol>
-    <table>
+    <table id="teste1">
         <tr> <!--Primeira Linha-->
             <td>A1</td>
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr class="linha"> <!--Segunda Linha-->
+        <tr> <!--Segunda Linha-->
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
@@ -33,8 +33,52 @@
         <tr> <!--Terceira Linha-->
             <td>A3</td>
             <td>B3</td>
-            <td class="dado">C3</td>
+            <td>C3</td>
         </tr>
     </table>
+    <hr>
+    <br>
+    <h1>Lidando com tabelas grandes</h1>
+    <p>A anatomia de tabelas grandes é a mesma das tabelas simples apenas adiocionando mais três tags, <strong>dentro dessas tags podemos por as tags</strong>: TR, TD, TH</p>
+    <ol>as novas tags são essas
+        <li>Caption</li>
+        <li>Thead</li>
+        <li>Tbody</li>
+        <li>Tfoot</li>
+
+    </ol>
+    <table id="test2">
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>00000000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <h1>Agora vamos falar um pouco de caption e escopo de tits de tabelas</h1>
+    <p><strong>CAPTION</strong> é basicamente a legenda/titulo da tabela não pode por TR nem TD nela</p>
+    <h2>Quando se usa TH?</h2>
+    <p>basicamente se usa th quando é meio que um titulo/texto q n é um dado, tipo o "estado" dessa tabela aí e tal. Aí a gente usa a propriedade "scope" com o valor "col" pra dizer que é uma coluna</p>
 </body>
 </html>
