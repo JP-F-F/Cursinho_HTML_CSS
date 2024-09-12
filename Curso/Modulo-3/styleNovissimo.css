@@ -24,3 +24,44 @@ table#tabelaex > caption{
     font-weight: bold;
     padding: 10px;
 }
+table#tab{
+    width: 500px;
+    border-collapse: collapse;
+}
+table#tab caption{
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding: 10px;
+}
+table#tab th, td{
+    border: 2px solid black;
+    padding: 10px;
+}
+.destaque{
+    background-color: fuchsia;
+}
+col.cnome{
+    background-color: cadetblue;
+}
+col.cgrupo{
+    background-color: chartreuse;
+}
+table#responsiva{
+    border-collapse: collapse;
+}
+table#responsiva > caption{
+    font-size: 2em;
+    font-weight: bolder;
+    padding: 10px;
+}
+table#responsiva  th, td{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+table#responsiva tr:nth-child(even){
+    background-color: rgb(208, 208, 208);
+}
+#container{
+    overflow-x: auto;
+}

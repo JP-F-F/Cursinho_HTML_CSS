@@ -36,15 +36,15 @@
         </caption>
         <thead>
             <tr>
-                <th>Grupos</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
             </tr>
 
         </thead>
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -63,7 +63,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <th rowspan="3">Homens</th>
+                <th rowspan="3" scope="rowgroup">Homens</th>
                 <td>Bruno Medonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
@@ -82,6 +82,193 @@
                 <td>Toy Story</td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
     </table>
+    <h2>Falando de escopos de agrupamento</h2>
+    <p> Meio que no scope a gente fala pro navegador via o HMTL onde estão os dados daquele TH. A gente usa colgroup e rowgroup para caso aquele TH tenha informações em mais de uma linha ou coluna.</p>
+    <br>
+    <h2>Agrupando Colunas com o colgroup</h2>
+    <table id="tab">
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria Brega</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Apresentadora</td>
+        </tr>
+        <tr>
+            <td>Cláudio</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>948209348209</td>
+            <td>deus grego</td>
+        </tr>
+        <tr>
+            <td>Maria Fumaça</td>
+            <td>Trem</td>
+            <td>50</td>
+            <td>Locomotora a vapor</td>
+        </tr>
+        <tr>
+            <td>Otávio</td>
+            <td>M</td>
+            <td>38</td>
+            <td>Traficante de drogas</td>
+        </tr>
+    </table>
+    <p>cara básicamente pra personalizar diversas colunas duma vez usamos a tag &lt;colgroup&gt; e nela colocamos o numero de colunas que temos em nossa tabela com a tag &lt;col&gt; sendo qua cada col representa uma coluna da nossa tabela, e em cada col podemos colocar umka classe ou id que vai personalizar a coluna inteira. <br> <strong>OBS: acho que com o rowgroup é a mesma ideia</strong></p>
+    <br>
+    <h2>Tabelas renponsivas</h2>
+    <div id="container">
+        <table id="responsiva">
+            <caption>Tabela responsiva</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tv 40º</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>09</td>
+                    <td>08</td>
+                    <td>04</td>
+                    <td>03</td>
+                    <td>1111</td>
+                    <td>3434</td>
+                    <td>5453</td>
+                    <td>656</td>
+                    <td>653</td>
+                </tr>
+                <tr>
+                    <td>Home Theater</td>
+                    <td>2323</td>
+                    <td>2435349039</td>
+                    <td>9039</td>
+                    <td>9039</td>
+                    <td>9039</td>
+                    <td>9039</td>
+                    <td>9039</td>
+                    <td>9039</td>
+                    <td>9039</td>
+                    <td>9039</td>
+                    <td>9039</td>
+                    <td>9039</td>
+                </tr>
+                <tr>
+                    <td>Samsung Galaxy S20</td>
+                    <td>4564</td>
+                    <td>4564</td>
+                    <td>4564</td>
+                    <td>4564</td>
+                    <td>4564</td>
+                    <td>4564</td>
+                    <td>4564</td>
+                    <td>4564</td>
+                    <td>4564</td>
+                    <td>4564</td>
+                    <td>4564</td>
+                    <td>4564</td>
+                </tr>
+                <tr>
+                    <td>iPad mini</td>
+                    <td>543</td>
+                    <td>543</td>
+                    <td>543</td>
+                    <td>543</td>
+                    <td>543</td>
+                    <td>543</td>
+                    <td>543</td>
+                    <td>543</td>
+                    <td>543</td>
+                    <td>543</td>
+                    <td>543</td>
+                    <td>543</td>
+                </tr>
+                <tr>
+                    <td>PlayStation4</td>
+                    <td>897</td>
+                    <td>897</td>
+                    <td>897</td>
+                    <td>897</td>
+                    <td>897</td>
+                    <td>897</td>
+                    <td>897</td>
+                    <td>897</td>
+                    <td>897</td>
+                    <td>897</td>
+                    <td>897</td>
+                    <td>897</td>
+                </tr>
+                <tr>
+                    <td>Lava Louças</td>
+                    <td>787</td>
+                    <td>787</td>
+                    <td>787</td>
+                    <td>787</td>
+                    <td>787</td>
+                    <td>787</td>
+                    <td>787</td>
+                    <td>787</td>
+                    <td>787</td>
+                    <td>787</td>
+                    <td>787</td>
+                    <td>787</td>
+                </tr>
+                <tr>
+                    <td>Amazon Echo</td>
+                    <td>807</td>
+                    <td>807</td>
+                    <td>807</td>
+                    <td>807</td>
+                    <td>807</td>
+                    <td>807</td>
+                    <td>807</td>
+                    <td>807</td>
+                    <td>807</td>
+                    <td>807</td>
+                    <td>807</td>
+                    <td>807</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>Basicamente pra dexar uma tabela reponsiva duma forma meio memes, é so colocar toda a table dentro duma div e no CSS deixar o overflow no auto</p>
 </body>
 </html>
