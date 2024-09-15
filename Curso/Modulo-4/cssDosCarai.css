@@ -13,3 +13,8 @@ iframe#Primeiroframe{
     width: 500px;
     height: 500px;
 }
+iframe#frameLocal{
+    width: 90vw;
+    height: 250px;
+    border: 2px solid black;
+}
