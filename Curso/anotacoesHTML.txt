@@ -1,8 +1,8 @@
----------coisas uteis HTML----------------------------------------
+﻿---------coisas uteis HTML----------------------------------------
 pra mostrar esse sinal "<" sem colocar ele em si se usa "&lt;"
 
 pra colocar emoji primeiro a gente coloca &#xcodigoEmoji;
-
+	
 e pra usar ">" se usa "&gt"
 
 as tags de lista tem um parametro "type", que altera a numeração da lista.
