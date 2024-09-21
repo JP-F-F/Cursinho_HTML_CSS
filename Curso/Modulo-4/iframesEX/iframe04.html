@@ -9,6 +9,9 @@
 <body>
     <h1>iframe pra aprender segurança</h1>
     <p>esse iframe está sendo usado pra se aprender a usar iframes com segurança </p>
-    <iframe style="height: 300px; width: 400px;" src="formularioDoido.html" frameborder="0"></iframe>
+    <iframe style="height: 200px; width: 400px;" src="formularioDoido.html" sandbox="sandbox" ></iframe>
+    <br>
+    <p>pra aumentar a segurança dos iframes a gente pode usar o atributo "sandbox" na tag do iframe, esse atributo por padrão vem com o valor de mesmo nome da tag, o sandbox bloqueia qualquer acesso e tal, que o site que o iframe tá tentando ter, nesse caso por exemplo o form n é enviado. <br> Outra fomar é usar o atributo "referrerpolicy", o valor padrão desse atributo é "no-referer-when-downgrade", aí pra deixar o iframe bem limitado é só trocar pra "no-referrer", isso vai fazer com q o que tá dentro do iframe n colete nenhum tipo de informação do usuário</p>
+    <p>E pra caso sega necessário que o iframe envie algo, a gente muda o sandbox pra "allow-same-origin", "allow-forms" e etc, podemos dar diversos tipos de permissão é só colocar a permissão dar um espaço e dar a proxima e por aí vai</p>
 </body>
 </html>
