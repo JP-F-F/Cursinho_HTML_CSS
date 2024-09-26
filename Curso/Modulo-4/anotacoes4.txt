@@ -5,3 +5,5 @@ O tamanho padrão de um iframe é 300(largura)x150
 MANOOOOO c não tá ligado, tem como mexer na barra de rolagem, é só você usar o pseudo-elemento "::::-webkit-scrollbar" aí tipo pra fazer ela sumir é só botar "width e height 0px"
 
 em formulários o input de texto e o texto que é seu titulo não possuem relação direta, no caso do "P" e o "input"
+
+os names ajudam bastante no PHP e HTML, e os IDs para os labels e JS
