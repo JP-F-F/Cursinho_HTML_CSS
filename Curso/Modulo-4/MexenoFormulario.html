@@ -20,17 +20,79 @@
         </p>
         <input type="submit" value="Enviar" >
     </form>
+
     <h2>ligando campos de forms a seus nomes</h2>
+
     <p>Pra gente fazer isso, nós precisamos colocar o NOME do nosso campo dentro de um label e no parametro <strong>"FOR"</strong> desse label colocamos o id do nosso CAMPO, porque isso é útil? simples fazer essa relação ajuda os mecanismos de busca a entender melhor a estrutura do seu site, sem contar que quando clicamos no label, essa relção faz com que o click leve direto pro campo a ser preenchido.</p>
     <br>
+
     <h2>A diferença de GET e POST</h2>
     <p>Pelo que o Guanabara ensinou até agora, a unica diferença entre os dois é que um mostra os dados na URL (GET) e o outro apenas via console/devTolls (POST), isso tem haver com a forma que os dados são enviados.</p>
+
     <h3>Quando se usa o GET?</h3>
+
     <p>Se usa o GEt quando o que se pede são dados que não são sensíveis (dados sensíveis: senhas, infos bancarias), outro momento bom pra usar é que caso seja uma info que é legal de compartilhar, tipo pesquisas do google, a URL com o metodo GET é compartilhavel. <strong>A proposito o GET só aguenta até três mil bytes</strong></p>
+
     <h3>Quando se usa o POST?</h3>
+
     <p>Pra enviar dados sensíveis junto com o HTTPS, se os dados tiverem mais de 3mil bytes e caso nos precisemos enviar arquivos</p>
     <br>
+
     <h2>Usando os inputs de texto e de senha</h2>
+
     <p>Agora vamos usar o input de texto de forma mais correta, porque por exemplo esses dois campos de texto acima podem enviar o form mesmo não tendo sido preenchidos, como resolver esse problema? Simples, usamos o atributo "REQUIRED" no input desejado,  a proposito o tipo de input "password" por ser um input de senha, deixa os caracteres digitados no campo anonimos (ou seja fica só aquelas bolinha preta lá.), tem o botão de reset também, que serve pra recarregar o form, nos campos que envolvem textos também podemos definir o tamanho máximo e minimo de caracteres com os atributos "MINLENGHT" e "MAXLENGTH" dentro do input desejado. <br> Nós podemos tambem aumentar o tamanho das caixas com o atributo SIZE, esse size usa como valor de tamanho o numero de caracteres qeu vao caber ali, poe exemplo se eu der size=10; ele vai ter espaço pra 10 caracteres, <strong>o autocomplete</strong> no form só tem duas opções "ON" e "OFF" certo? Mas se nos usarmos o autocomplete em inputs podemos definir oq exatamente ele deveria estar sugerindo para o usuario preencher.</p>
+    <hr>
+    <h2>Usando os elementos number, month, date e time</h2>
+    <p>UMA COISA GERAL o atributo <strong>Value</strong> pode ser usado pra definir um valor padrão que virá preenchido no campo</p>
+
+    <p>O input do tipo <strong>Number</strong> só permite a inserção de numeros inteiros e traços no campo, podemos fazer com que números quebrados sejam "aceitos" usando o parametro <strong>Step</strong> esse parametro permite que nos ditemos de quanto em quanto os números vão andar, e os parametros <strong>MIN e MAX</strong> usados nessa parte numerica servem pra definir o menor(min) e o maior(max) numero que pode ser colocado naquele campo.</p> <br>
+
+    <p>O input de <strong>month</strong> serve pra criar um campo que pode-se colocar um mês e ano</p>
+
+    <h2>Usando os inputs de Tel e Email</h2>
+    <p>O input de email aparanetemente é legal mas não dá pra esperar muito dele. o input de <strong>tel</strong> tem uma compatibilidade melhor com dispositivos móveis, pois ele consegue puxar a lista de contatos</p>
+
+    <h3>alguma coisa de expressoes regulares/RegEx</h3>
+    <p>No html, nesse caso nos inputs podemos colocar um padrão neles com o parametro pattern, nesse caso definimos uma expressão regular assim: <strong>pattern="^[0-9]{4, 5}-[0-9]{4, 5}"</strong> o que está dentro de [] é o numero min e max e o que está dentro de {} é o limite de caracteres</p>
+
+    <h3>Umas coisas gerais</h3>
+    <p>Podemos usar a tag <strong>fieldset</strong> para agrupar campos, e podemos usar a tag <strong>legend</strong> para dar um titulo/legenda a esse fieldset</p>
+
+    <h1>Formulário de testes</h1>
+    <form action="#" method="get">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="media" min="0" max="10" placeholder="0 a 10">
+        </p>
+        <p>
+            <label for="imes">Periodo Letivo</label>
+            <input type="month" name="mes" id="imes" value="2020-1">
+        </p>
+        <p>
+            <label for="idia">Dia da prova</label>
+            <input type="date" name="dia" id="idia">
+        </p>
+        <p>
+            <label for="ihora">Hora da Prova</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+            <label for="iemial">Seu email</label>
+            <input type="email" name="email" id="iemail">
+        </p>
+        <p>
+            <label for="itel">Seu telefone</label>
+            <input type="tel" name="tel" id="itel">
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+       
+    </form>
 </body>
 </html>
