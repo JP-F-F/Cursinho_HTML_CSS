@@ -47,7 +47,7 @@
 
     <p>O input do tipo <strong>Number</strong> só permite a inserção de numeros inteiros e traços no campo, podemos fazer com que números quebrados sejam "aceitos" usando o parametro <strong>Step</strong> esse parametro permite que nos ditemos de quanto em quanto os números vão andar, e os parametros <strong>MIN e MAX</strong> usados nessa parte numerica servem pra definir o menor(min) e o maior(max) numero que pode ser colocado naquele campo.</p> <br>
 
-    <p>O input de <strong>month</strong> serve pra criar um campo que pode-se colocar um mês e ano</p>
+    <p>O input de <strong>month</strong> serve pra criar um campo que pode-se colocar um mês e ano, mas ele não funciona no firefox</p>
 
     <h2>Usando os inputs de Tel e Email</h2>
     <p>O input de email aparanetemente é legal mas não dá pra esperar muito dele. o input de <strong>tel</strong> tem uma compatibilidade melhor com dispositivos móveis, pois ele consegue puxar a lista de contatos</p>
@@ -58,40 +58,57 @@
     <h3>Umas coisas gerais</h3>
     <p>Podemos usar a tag <strong>fieldset</strong> para agrupar campos, e podemos usar a tag <strong>legend</strong> para dar um titulo/legenda a esse fieldset</p>
 
+    <h2>usando o checkBox e o Radio</h2>
+
+    <h3>O checkBox</h3>
+    <p>O checkBox é aqueles quadradinhos que servem pra marcar multiplas infos e etc, e pra aparecer uma opção específica já marcada, é só usar o parametro <strong>CHECKED</strong> no input que deve vir já marcado </p>
+    <h3>O Radio</h3>
+    <p>Nãoe esse input não tem nada haver com qualquer onda sonora, esse input é aquelas bolinha que pode ser marcada uma opção apenas, é importante lembrar que, os inputs desse tipo que estão no mesmo fieldset/ na mesma area de escolhas, devem ter o mesmo name, e pra aparecer uma opção específica já marcada, é só usar o parametro <strong>CHECKED</strong> no input que deve vir já marcado</p>
+
+
     <h1>Formulário de testes</h1>
     <form action="#" method="get">
-        <p>
-            <label for="inome">Nome</label>
-            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
-        </p>
-        <p>
-            <label for="imedia">Média</label>
-            <input type="number" name="media" id="media" min="0" max="10" placeholder="0 a 10">
-        </p>
-        <p>
-            <label for="imes">Periodo Letivo</label>
-            <input type="month" name="mes" id="imes" value="2020-1">
-        </p>
-        <p>
-            <label for="idia">Dia da prova</label>
-            <input type="date" name="dia" id="idia">
-        </p>
-        <p>
-            <label for="ihora">Hora da Prova</label>
-            <input type="time" name="hora" id="ihora">
-        </p>
-        <p>
-            <label for="iemial">Seu email</label>
-            <input type="email" name="email" id="iemail">
-        </p>
-        <p>
-            <label for="itel">Seu telefone</label>
-            <input type="tel" name="tel" id="itel">
-        </p>
-        <p>
-            <input type="submit" value="enviar">
-            <input type="reset" value="limpar">
-        </p>
+        <fieldset>
+            <legend>Usando uns INPUT</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
+            </p>
+            <p>
+                <label for="imedia">Média</label>
+                <input type="number" name="media" id="media" min="0" max="10" placeholder="0 a 10">
+            </p>
+            <p>
+                <label for="imes">Periodo Letivo</label>
+                <input type="month" name="mes" id="imes" value="2020-1">
+            </p>
+            <p>
+                <label for="idia">Dia da prova</label>
+                <input type="date" name="dia" id="idia">
+            </p>
+            <p>
+                <label for="ihora">Hora da Prova</label>
+                <input type="time" name="hora" id="ihora">
+            </p>
+            <p>
+                <label for="iemial">Seu email</label>
+                <input type="email" name="email" id="iemail">
+            </p>
+            <p>
+                <label for="itel">Seu telefone</label>
+                <input type="tel" name="tel" id="itel">
+            </p>
+            <p>
+                <label for="iesfut">Futebol</label>
+                <input type="checkbox" name="esfut" id="iesfut"> <br>
+                <label for="iesboxe">BOXE</label>
+                <input type="checkbox" name="esboxe" id="iesboxe">
+            </p>
+            <p>
+                <input type="submit" value="enviar">
+                <input type="reset" value="limpar">
+            </p>
+        </fieldset>
        
     </form>
 </body>
