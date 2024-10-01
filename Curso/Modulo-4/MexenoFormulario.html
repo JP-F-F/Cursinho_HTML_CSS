@@ -65,6 +65,16 @@
     <h3>O Radio</h3>
     <p>Nãoe esse input não tem nada haver com qualquer onda sonora, esse input é aquelas bolinha que pode ser marcada uma opção apenas, é importante lembrar que, os inputs desse tipo que estão no mesmo fieldset/ na mesma area de escolhas, devem ter o mesmo name, e pra aparecer uma opção específica já marcada, é só usar o parametro <strong>CHECKED</strong> no input que deve vir já marcado</p>
 
+    <h2>Usando os elemntos de color, range e file</h2>
+
+    <h3>Input de COLOR</h3>
+    <p>Esse input serve para por/ler a cor de algo, ou meio que o usuário selecione uma cor, usando o value nesse input podemos definir que cor deve vir preenchida por padrão no campo, colocando seu código hexadecimal no value</p>
+
+    <h3>Input RANGE</h3>
+    <p>Esse input é aquele lá que te dá uma bolinha pra você arrastar e definir valor, quando usar esse input é necessário usar certos parametros nele, começando, que é bem interessante definir um <strong>MAX e MIN</strong> pra ele, porque se não ele vai ficar de 0 a 100 </p>
+
+    <h3>Input FILE</h3>
+    <p>Esse input como o proprio nome já indica, permite que o usuário envie um arquivo, <strong>Alguns avisos importantes sobre esse input</strong> quando se usar esse tipo de input, o ideal é usar o metodo "POST"</p>
 
     <h1>Formulário de testes</h1>
     <form action="#" method="get">
@@ -78,18 +88,23 @@
                 <label for="imedia">Média</label>
                 <input type="number" name="media" id="media" min="0" max="10" placeholder="0 a 10">
             </p>
-            <p>
+
+            <fieldset>
+                <legend>Inputs de tempo</legend>
+                <p>
                 <label for="imes">Periodo Letivo</label>
                 <input type="month" name="mes" id="imes" value="2020-1">
-            </p>
-            <p>
+                </p>
+                <p>
                 <label for="idia">Dia da prova</label>
                 <input type="date" name="dia" id="idia">
-            </p>
-            <p>
+                </p>
+                <p>
                 <label for="ihora">Hora da Prova</label>
                 <input type="time" name="hora" id="ihora">
-            </p>
+                </p>
+            </fieldset>
+
             <p>
                 <label for="iemial">Seu email</label>
                 <input type="email" name="email" id="iemail">
@@ -98,12 +113,41 @@
                 <label for="itel">Seu telefone</label>
                 <input type="tel" name="tel" id="itel">
             </p>
-            <p>
-                <label for="iesfut">Futebol</label>
-                <input type="checkbox" name="esfut" id="iesfut"> <br>
-                <label for="iesboxe">BOXE</label>
+
+            <fieldset>
+                <legend>Inputs de escolha</legend>
+                <p>
+                <input type="checkbox" name="esfut" id="iesfut">
+                <label for="iesfut">Futebol</label> <br>
                 <input type="checkbox" name="esboxe" id="iesboxe">
-            </p>
+                <label for="iesboxe">BOXE</label>
+                </p>
+                <p>
+                <input type="radio" name="sexo" id="isexo">
+                <label for="isexo">HOMEM</label><br>
+                <input type="radio" name="sexo" id="isexoF">
+                <label for="isexoF">FEMIA</label>
+                </p>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Uns inputs meio diferentes</legend>
+                <p>
+                <label for="icor">Escolhe uma cor</label>
+                <input type="color" name="cor" id="icor">
+                </p>
+                
+                <p>
+                <label for="isatisfacao">Está satisfeito?</label> <br>
+                <input type="range" name="satisfacao" id="isatisfacao">
+                </p>
+                
+                <p>
+                <label for="iArquivo">Envie um arquivo</label>
+                <input type="file" name="arquivo" id="iarquivo">
+                </p>
+            </fieldset>
+
             <p>
                 <input type="submit" value="enviar">
                 <input type="reset" value="limpar">
