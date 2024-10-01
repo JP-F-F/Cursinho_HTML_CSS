@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="forms.css">
+    <title>MaisForms</title>
+</head>
+<body>
+    <h1>Usando umas coisas de form que não são inputs</h1>
+
+    <h2>Começando por Select, datalist e textarea</h2>
+
+    <h3>A tag select</h3>
+    <p>Essa tag  é aquelas listas que você pode escolher uma opção, tipo aquelas de escolher estado, aí pra gente dar as opções da lista, dentro do select a gente pões uma tag <strong>OPTION</strong> pra cada opção, e outro detalhe legal é que podemos usar a tag <strong>optGroup</strong> pra agrupar opções em uma subLista, pra darmos o nome dessa subLista a gete coloca um label dentro da tag OPTGROUP </p>
+
+    <h3>A tag datalist</h3>
+    <p>Pra usarmos o datalist primeiro colocamos um input de texto e nele nos colocamos a propriedade <strong>List</strong> nessa propriedade deverá ser indicado o ID da lista que vai ser usada no campo, após isso usamos a tag datalist, e dentro dela colocamos as option, essa tag é util para quando queremos dar opçoes pro usuario, mas tambem dar a opção de ele informar umaopção que pode não estar presente</p>
+
+    <h3>Usando o TextArea</h3>
+    <p>É recomendado usar o textarea em forms com o metodo post, o textarea cria um campo para o usuario digitar um texto</p>
+
+    <h2>Falando de Outputs</h2>
+    <p>Nos outputs nos colocamos valores e etc que serão gerados a partir de respostas nos inputs dos forms, pra isso nós vamos no input que vai dar valor e etc ao output e colocamos a propriedade <strong>oninput="codigo em JS". Coisa importante de output</strong> eles não servem pra enviar dados apenas pra mostrar</p>
+
+
+    <h1>Form de exemplo</h1>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Algumastags legais pra forms</legend>
+            <p>
+            <label for="iest">Qual seu estado?</label>
+            <select name="estado" id="iest">
+            <option value="SP">São Paulo</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="RJ">Rio de Janeiro</option>
+            </select>
+            </p>
+            
+            <p>
+            <label for="iprof">Qual a sua profissão?</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+            <option value="ADM">Administrador</option>
+            <option value="CONT">Contador</option>
+            <option value="DEV">Desenvolvedor</option>
+            <option value="PROF">Professor</option>
+            </datalist>
+            </p>
+            
+            <p>
+            <label for="imsg">Mensagem</label>
+            <textarea name="msg" id="imsg" cols="20" rows="1"></textarea>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Usando OUTPUTS</legend>
+            <p>
+            <label for="in1">Numero 1:</label>
+            <input type="number" name="n1" id="in1" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+
+            <p>
+            <label for="in2">Numero 2:</label>
+            <input type="number" name="n2" id="in2" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+
+            <p>
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">0</output>
+            </p>
+
+            <p>
+                <Label for="inum">Numero</Label>
+                <input type="range" name="num" id="inum" oninput="ival.innerHTML = Number(inum.value)">
+                <output id="ival">50</output>
+            </p>
+
+            <p>
+                <label for="iano">Em qual ano você nasceu</label>
+                <input type="number" name="ano" id="iano" min="1900" max="2024" value="1900" oninput="calcIdade()">
+            </p>
+
+            <p>
+                <label for="iidade">A sua idade é</label>
+                <output id="iidade">0</output>
+            </p>
+        </fieldset>
+
+        <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+        </p>
+       
+    </form>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>
