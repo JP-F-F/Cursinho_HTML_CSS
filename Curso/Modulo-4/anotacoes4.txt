@@ -17,4 +17,11 @@ Pra que servem as medias queries??
 OS TIPOS DE MEDIAS QUERIES
 tem os midia types, esses são os tipos de midia que nós indicamos o "tipo" daquele CSS e pra que ele serve, se é pra uma tela, pra impressão ou coisa assim.
 
-E tem os midia features, já os midia features são as caracteristicas de midia, que indicamos
+E tem os midia features, já os midia features são as caracteristicas de midia, que indicamos assim "midia="screen and (feature indicada)""
+
+Usando as medias queries
+  Sabe esse lance de medias queries é bem legal vai ajudar bastante, tipo ficar organizando coisas pra tipos diferentes de telas e tal, muito massa, aquele MIDIA no link do CSS serve pra informar pra que tipo de mudança esse CSS se aplica, existem 3 valores principais pro MIDIA: SCREEN, PRINT e ALL
+
+Usando os midias features
+  Pra indicar as features do type, nos vamos no parametro de midia e declaramos mais ou menos assim "midia="screen and (feature indicada)""
+  Tem uma forma mais simples de declarar essas features, que é mais tranquila pra projetos pequenos e etc, a gente basicamente declara a regra no HTML "@media tipo da midia (features da midia"){ aqui dentro vai as configurações pra essa mídia em especial}
