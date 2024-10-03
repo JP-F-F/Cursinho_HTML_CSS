@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Esse midia SCREEN está dizendo que esse CSS serve pra tela e o PRINT está dizendo que aquele CSS é pra impressões -->
+
+    <link rel="stylesheet" href="queryTela.css" media="screen and (orientation: portrait)">
+    <link rel="stylesheet" href="queryTela2.css" media="screen and (orientation: landscape)">
+    <link rel="stylesheet" href="queryImpressora.css" media="print">
+    <link rel="stylesheet" href="queryTodos.css" media="all">
+    <title>Media queries</title>
+</head>
+<body>
+    <header>
+        <h1>Noticias</h1>
+        <menu>
+            <ul>
+                <li>Esportes</li>
+                <li>Tecnologia</li>
+                <li>Politica</li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Usando as medias queries</h2>
+            <p>Sabe esse lance de medias queries é bem legal vai ajudar bastante, tipo ficar organizando coisas pra tipos diferentes de telas e tal, muito massa, aquele <strong>MIDIA</strong> no link do CSS serve pra informar pra que tipo de mudança esse CSS se aplica, <strong>existem 3 valores principais pro MIDIA:</strong> SCREEN, PRINT e ALL</p>
+
+            <h3>Usando os midias features</h3>
+            <p>Pra indicar as features do type, nos vamos no parametro de midia e declaramos mais ou menos assim "midia="screen and (feature indicada)""</p>
+
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aperiam quas suscipit rerum, sunt, accusantium nesciunt quis velit laboriosam laborum quia omnis esse consectetur dolor saepe, alias inventore numquam ab! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum harum commodi minima quae temporibus exercitationem, ducimus eos quos sequi quisquam, quibusdam voluptatum, modi inventore cumque. Doloremque cumque similique necessitatibus id. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa vel neque fugiat odit magni, blanditiis ab ullam tempora porro, dignissimos itaque voluptatum molestias, amet dolorum sapiente minima ipsa facere. Nostrum.</p>
+        </article>
+    </main>
+</body>
+</html>

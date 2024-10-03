@@ -7,3 +7,14 @@ MANOOOOO c não tá ligado, tem como mexer na barra de rolagem, é só você usa
 em formulários o input de texto e o texto que é seu titulo não possuem relação direta, no caso do "P" e o "input"
 
 os names ajudam bastante no PHP e HTML, e os IDs para os labels e JS
+
+
+----------------------MEDIA QUERIES--------------------
+
+Pra que servem as medias queries??
+    Bom, básicamente elas servem pra adptar o conteudo de sites pra diferentes midias, elas são feitas no CSS
+
+OS TIPOS DE MEDIAS QUERIES
+tem os midia types, esses são os tipos de midia que nós indicamos o "tipo" daquele CSS e pra que ele serve, se é pra uma tela, pra impressão ou coisa assim.
+
+E tem os midia features, já os midia features são as caracteristicas de midia, que indicamos
