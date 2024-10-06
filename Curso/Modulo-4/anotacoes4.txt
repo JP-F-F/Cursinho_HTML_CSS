@@ -2,7 +2,7 @@
 
 O tamanho padrão de um iframe é 300(largura)x150
 
-MANOOOOO c não tá ligado, tem como mexer na barra de rolagem, é só você usar o pseudo-elemento "::::-webkit-scrollbar" aí tipo pra fazer ela sumir é só botar "width e height 0px"
+MANOOOOO c não tá ligado, tem como mexer na barra de rolagem, é só você usar o pseudo-elemento "::-webkit-scrollbar" aí tipo pra fazer ela sumir é só botar "width e height 0px"
 
 em formulários o input de texto e o texto que é seu titulo não possuem relação direta, no caso do "P" e o "input"
 
@@ -25,3 +25,14 @@ Usando as medias queries
 Usando os midias features
   Pra indicar as features do type, nos vamos no parametro de midia e declaramos mais ou menos assim "midia="screen and (feature indicada)""
   Tem uma forma mais simples de declarar essas features, que é mais tranquila pra projetos pequenos e etc, a gente basicamente declara a regra no HTML "@media tipo da midia (features da midia"){ aqui dentro vai as configurações pra essa mídia em especial}
+
+typical devices break points, que é a gente definir o tamanho do das telas do site e tal.
+
+Nós temos typical devices break points para:
+  --Pequenas Telas: até 600px
+  --Celular: de 600px até 768px (ou o minimo e maximo dos tamanhos atuais de telas de celular)
+  --Tablet: de 769px até 992px (ou o minimo e maximo dos tamanhos atuais de telas de tablet)
+  --Desktop: de 992px até 1200px (ou o minimo e maximo dos tamanhos atuais de telas de desktop)
+  --Grandes telas: acima de 1200px (ou o minimo e maximo dos tamanhos atuais de telas de TV e tal)
+
+em impressoras é desnecessário o back-ground image, pq a gente n imprime fundo
