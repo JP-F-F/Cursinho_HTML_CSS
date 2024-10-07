@@ -8,6 +8,10 @@ em formulários o input de texto e o texto que é seu titulo não possuem relaç
 
 os names ajudam bastante no PHP e HTML, e os IDs para os labels e JS
 
+------USANDO ICONES----------------
+pra gentes usar uns icones no html primeiro a gente coloca esse link na head do documento "<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">".
+Depois usamos a seguinte tag "<i class="material-icons">nome do ICONE</i>"
+
 
 ----------------------MEDIA QUERIES--------------------
 

@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="menuzin.css">
+    <link rel="stylesheet" href="menuzinMidias.css">
     <title>fazeno um menu daora</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Algum site</h1>
-        <menu>
+        <i id="burger" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li> <a href="#">Home</a> </li>
                 <li> <a href="#">Sobre</a> </li>
@@ -26,5 +29,24 @@
             <p>Não sei o quenão sei que lá alguma coisa aí so to enchendo linguiça pra esse site aqui ter conteudo e tal usar lorem é legal mas bom mesmo é escrever já já eu vou sair e aproveitar pra beber, não, não quero morrer eu quero viver mas hoje ta tudo estranho, porque eu tô estranho sabe? Se entender é algo dificil, é algo perigoso olhar pro abismo que habita dentro de si, ver o monstro que fica ali, ou qualquer coisa assim, é simplesmente assustador.</p>
         </article>
     </main>
+    
+    <!-- função pra mostrar o menu no mobile -->
+    <script>
+        function clickMenu(){
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>
