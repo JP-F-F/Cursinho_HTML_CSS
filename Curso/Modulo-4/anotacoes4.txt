@@ -1,5 +1,11 @@
 ----------Coisas gerais do 4º Módulo----------
 
+DICA IMPORTANTE quando você tiver uma animação deixe os transforms dos seus seletores como ultima configuração!!!!! evita problemas de compatibilidade
+
+Sabia que o CSS faz calculo? Dá pra usar uma função chamada "calc" pra por valores nas cofigrações e etc EX: width: calc(100% - 56px)
+
+Mano sabia que pra configurar inputs no css tem uma tecnica especial? Tipo se eu posso dizer qual o tipo de input que eu quero modificar assim ó "input [type= tipo do input]"
+
 O tamanho padrão de um iframe é 300(largura)x150
 
 MANOOOOO c não tá ligado, tem como mexer na barra de rolagem, é só você usar o pseudo-elemento "::-webkit-scrollbar" aí tipo pra fazer ela sumir é só botar "width e height 0px"

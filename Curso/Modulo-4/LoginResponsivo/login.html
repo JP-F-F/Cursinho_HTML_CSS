@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="loginzin.css">
+    <link rel="stylesheet" href="midias.css">
     <title>Tela de login</title>
 </head>
 <body>
@@ -15,12 +17,25 @@
 
             </div>
 
-            <div id="formulário">
+            <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça Login para acessar sua conta e poder fazer as configurções no seu ambiente</p>
 
-                <form action="#" method="post">
-                    
+                <form action="#" method="post" autocomplete="on">
+                    <div class="campo">
+                        <i class="material-icons">person</i>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu E-mail" autocomplete="email" required maxlength="35">
+                        <label for="ilogin">Login</label>
+                    </div>
+
+                    <div class="campo">
+                        <i class="material-icons">vpn_key</i>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua Senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="isenha">Senha</label>
+                    </div>
+
+                    <input type="submit" value="Logar">
+                    <a href="#" class="botao">Esqueci Minha senha <i class="material-icons">mail</i> </a>
                 </form>
             </div>
         </section>
