@@ -1,0 +1,21 @@
+-----------------Coisas Gerais de FlexBox------------------------------
+
+Olha básicamente a ideia principal do flexBox é criar e usar caixas flexiveis
+
+O elemento pai do flexBox é quem leva todas as configurações base dos flexbox, essa div geralemte leva a classe "container" e é nela que a configuração "flex" fica
+
+Existem dois eixos No flexBox, sendo esses:
+
+Todos os eixos tem dois pontos o ponto inicial e o final EX: main-start e main-end (que são os dois pontos do eixo principal).
+Esses pontos são definidos a partir da flex-direction, EX: se o direction é row, o main-start fica na esquerda e o end na direita; Já se é um column o main-start fica no topo e o end no fundo.
+
+O eixo principal vulgo "main-axis" e o eixo transversal o "cross-axis"
+
+
+Esses eixos são definidos apartir do momento que escolhemos o nosso flex-direction(configuração explicada abaixo) -->
+
+    Flex-Direction, é a direção que o flex vai seguir e que os itens serão organizados, essa configuração tem 4 valores:
+        °Row: organiza os elementos filhos em linha da esquerda para a direita;
+        °Row-reverse: organiza os elementos filhos em linha da direita pra esquerda;
+        °column: organiza os elementos filhos em uma coluna de cima para baixo;
+        °column-reverse: organiza os elementos filhos em uma coluna de baixo pra cima;
