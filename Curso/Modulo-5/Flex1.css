@@ -7,8 +7,8 @@
 div.container{
     background-color: aqua;
     display: flex;
-    flex-direction: row;
-    height: 50vh;
+    flex-flow: row wrap;
+    
 }
 
 div.item{
@@ -18,5 +18,6 @@ div.item{
     color: white;
     text-align: center;
     border: 3px dashed black;
+    flex: auto;
     
 }

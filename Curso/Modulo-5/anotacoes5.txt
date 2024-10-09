@@ -1,16 +1,17 @@
 -----------------Coisas Gerais de FlexBox------------------------------
 
+O encolhimento dos blocos e itens dependem muito do conteudo que está neles, por exemplo se for um texto ele vai encolher até o tamanho da palavra mais longa e caso o encolhimento não seja o suficiente (ou não seja desejado) o conteudovai quebrar.
+
 Olha básicamente a ideia principal do flexBox é criar e usar caixas flexiveis
 
 O elemento pai do flexBox é quem leva todas as configurações base dos flexbox, essa div geralemte leva a classe "container" e é nela que a configuração "flex" fica
 
 Existem dois eixos No flexBox, sendo esses:
 
-Todos os eixos tem dois pontos o ponto inicial e o final EX: main-start e main-end (que são os dois pontos do eixo principal).
-Esses pontos são definidos a partir da flex-direction, EX: se o direction é row, o main-start fica na esquerda e o end na direita; Já se é um column o main-start fica no topo e o end no fundo.
-
 O eixo principal vulgo "main-axis" e o eixo transversal o "cross-axis"
 
+Todos os eixos tem dois pontos o ponto inicial e o final EX: main-start e main-end (que são os dois pontos do eixo principal).
+Esses pontos são definidos a partir da flex-direction, EX: se o direction é row, o main-start fica na esquerda e o end na direita; Já se é um column o main-start fica no topo e o end no fundo.
 
 Esses eixos são definidos apartir do momento que escolhemos o nosso flex-direction(configuração explicada abaixo) -->
 
@@ -19,3 +20,13 @@ Esses eixos são definidos apartir do momento que escolhemos o nosso flex-direct
         °Row-reverse: organiza os elementos filhos em linha da direita pra esquerda;
         °column: organiza os elementos filhos em uma coluna de cima para baixo;
         °column-reverse: organiza os elementos filhos em uma coluna de baixo pra cima;
+
+=============Falando de Empacotamento e fluxo no flexBox=================
+
+O flex-wrap que é o Empacotamento ela vai configurar o comportamento do container, o valor padrão do flex-wrap é "nowrap" que seria o sem Empacotamento/Sem quebra de linha ou conteudo.
+    O flex-wrap tem esses valores:
+    --nowrap: que basicamente diz ao pai que ele não deve quebrar a linha dos conteudos;
+    --wrap: o contratrio do nowrap, faz com que o pai possa quebrar o conteudo em linhas no sentido do eixo-transversal;
+    --wrap-reverse: faz o mesmo que o wrap, mas com a diferença que ele vai quebrar no sentido oposto ao eixo-transversal;
+
+O flex-flow é uma shorthand que nos permite definir flex-direction + flex-wrap numa configuração só
