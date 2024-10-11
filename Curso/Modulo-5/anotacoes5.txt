@@ -30,3 +30,21 @@ O flex-wrap que é o Empacotamento ela vai configurar o comportamento do contain
     --wrap-reverse: faz o mesmo que o wrap, mas com a diferença que ele vai quebrar no sentido oposto ao eixo-transversal;
 
 O flex-flow é uma shorthand que nos permite definir flex-direction + flex-wrap numa configuração só
+
+==========Alinhamento e tal no flexBox (align-itens e justify-content)==========
+
+Essas duas configurações são feitas no container vulgo Pai, com essas duas configurações a gente consegue alinhar os itens tanto no main-axis quanto no cross-axis.
+
+O justify-content vai fazer o alinhamento relacionado com o main-axis, alguns valores do justify-content --->
+    --flex-start: esse é o valor padrão que vem no justify-content, ele vai pegar o main-start e vai grudar o primeiro item lá.
+    --flex-end: ao contrário do flex-start ele vai colar o ultimo item no main-end.
+    --center: Essa valor vai calcular exatamente o centro do container e vai colocar os itens lá.
+    --space-between: esse valor fará o seguinte, ele vai colocar o primeiro item no main-start, e o ultimo item no main-end, e o resto dos itens serão colocados no centro com um espaçamento igual para todos.
+    --space-evenly: esse valor fará com qeu todos os elementos tenho espaçamentos iguais tanto entre eles quanto ao "redor".
+    --space-around: esse valor fará com que o container seja divido em espaços iguais pra cada item e deixara cada item centralizado no seu espaço.
+---
+
+O align-itens vai alinhar os itens do container com base no cross-axis, alguns valores pra essa configuração -->
+    --stretch: esse é o valor padrão dessa configuração, ela básicamente estica os itens para se aduequarem ao container.
+    --Os valores flex-start, flex-end, center funcionam de forma semelhante ao do justify-content trocando o main-start e main-end por cross-start e cross-end.
+    --O align-itens não tem as configurações de espaço, essa configuração é feita com outro comando.
