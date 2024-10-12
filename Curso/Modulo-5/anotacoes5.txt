@@ -42,9 +42,23 @@ O justify-content vai fazer o alinhamento relacionado com o main-axis, alguns va
     --space-between: esse valor fará o seguinte, ele vai colocar o primeiro item no main-start, e o ultimo item no main-end, e o resto dos itens serão colocados no centro com um espaçamento igual para todos.
     --space-evenly: esse valor fará com qeu todos os elementos tenho espaçamentos iguais tanto entre eles quanto ao "redor".
     --space-around: esse valor fará com que o container seja divido em espaços iguais pra cada item e deixara cada item centralizado no seu espaço.
----
+-----
 
 O align-itens vai alinhar os itens do container com base no cross-axis, alguns valores pra essa configuração -->
     --stretch: esse é o valor padrão dessa configuração, ela básicamente estica os itens para se aduequarem ao container.
     --Os valores flex-start, flex-end, center funcionam de forma semelhante ao do justify-content trocando o main-start e main-end por cross-start e cross-end.
     --O align-itens não tem as configurações de espaço, essa configuração é feita com outro comando.
+------
+
+======Alinhando conteudos empacotados com flexBox========
+
+Conteudos empacotados são basicamente aqueles conteudos que se quebram quando se usa o flex-wrap com o nowrap e encolhe esses elementos até o limite.
+
+o align-content vai alinhar os elementos emmpacotados no cross-axis, alguns valores aceitos por essa propriedade:
+    --stretch: esse valor vai dividir o conteudo em partes iguais e vai colocar os itens dentro e esticalos até o máximo de suas áreas.
+    --flex-start: vai basicamente grudar os itens no cross-start, deixando o espaço em branco no cross-end;
+    --flex-end: mesma logica do flex-start mundando a logica do cross-start pelo cross-end;
+    --center:vai deixar espaços em branco iguais no cross-end e start pra alinhar os itens no meio;
+    --space-between: mesma logica que na configuração "justify-content" trocando apenas o main-axis pelo cross-axis;
+    --space-evenly: mesma logica que na configuração "justify-content" trocando apenas o main-axis pelo cross-axis;
+    --space-around: ele vai separar o container em areas e vai centraliz os conteudos nessa areas;
