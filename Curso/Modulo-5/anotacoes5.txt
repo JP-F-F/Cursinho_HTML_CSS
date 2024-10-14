@@ -62,3 +62,27 @@ o align-content vai alinhar os elementos emmpacotados no cross-axis, alguns valo
     --space-between: mesma logica que na configuração "justify-content" trocando apenas o main-axis pelo cross-axis;
     --space-evenly: mesma logica que na configuração "justify-content" trocando apenas o main-axis pelo cross-axis;
     --space-around: ele vai separar o container em areas e vai centraliz os conteudos nessa areas;
+
+==================Anatomia dos itens no flexBox====================
+
+Aqui a gente vai ver as propriedades dos itens que ficam dentro do container.
+agora vamos ver o order e o align-self.
+
+A propriedade order, básicamente define a ordem que os elementos devem aparecer, seguindo os valores dados de forma decrescente, essa propriedade aceita tambem valores negativos. O valor padrão dessa propriedade é zero.
+EX: item = order 0; item2 = order 3; item3 = order -9; seguindo esses valores o itens serão exibidos na seguinte sequencia --> item3 item e item2. 
+------
+
+A propriedade align-self ela se aplica a cada um dos itens e cada item pode ter um alinhamento diferente.
+Basicamente essa propriedade alinha um item específico, funciona como o align-content e o itens, mas para apenas um único item.
+Ele funciona com base no cross-axis, essa propriedade tem cinco valores sendo eles:
+    --auto: valor padrão que herda o alinhamento vertical do pai seja ele align-content ou align-itens;
+    --flex-start: e que alinha no cross-start o item;
+    --flex-end: que alinha no cross-end o item;
+    --center: que alinha o item no centro;
+    --stretch: que estica o item pra ocupar todo o espaço vertical;
+-------
+
+Usando o flex-basis, ele define o tamanho máximo do elemento com base no main-axis, vale resaltar que o valor definido para essa propriedade só será respeitado enquanto for possivel manter o conteudo do elemento dentro daquele espaço, caso contrario a caixa ira se expandir ou encolher para encaixar se no conteudo.
+essa propriedade tem os seguintes valores -->
+    --auto: basicamente define que o tamanho do item será baseado no tamanho do seu conteudo;
+    --podemos colocar tamanhos específicos tambem (como 400px) para definir qual será o tamanho maximo do elemento;
