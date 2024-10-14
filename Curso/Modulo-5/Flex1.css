@@ -21,7 +21,8 @@ div.item{
     color: white;
     text-align: center;
     border: 3px dashed black;
-    flex-basis: 100px
+    flex-basis: 100px;
+    flex-grow: 1;
 }
 
 div.item2{

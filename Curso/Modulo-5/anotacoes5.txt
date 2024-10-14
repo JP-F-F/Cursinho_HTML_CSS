@@ -73,7 +73,7 @@ EX: item = order 0; item2 = order 3; item3 = order -9; seguindo esses valores o 
 ------
 
 A propriedade align-self ela se aplica a cada um dos itens e cada item pode ter um alinhamento diferente.
-Basicamente essa propriedade alinha um item específico, funciona como o align-content e o itens, mas para apenas um único item.
+Basicamente essa propriedade alinha um item específico, funciona como o align-cntent e o itens, mas para apenas um único item.
 Ele funciona com base no cross-axis, essa propriedade tem cinco valores sendo eles:
     --auto: valor padrão que herda o alinhamento vertical do pai seja ele align-content ou align-itens;
     --flex-start: e que alinha no cross-start o item;
@@ -86,3 +86,22 @@ Usando o flex-basis, ele define o tamanho máximo do elemento com base no main-a
 essa propriedade tem os seguintes valores -->
     --auto: basicamente define que o tamanho do item será baseado no tamanho do seu conteudo;
     --podemos colocar tamanhos específicos tambem (como 400px) para definir qual será o tamanho maximo do elemento;
+---------------
+
+==========Controlando tamanho de itens flexiveis======
+
+vamos usar agora as configurações flex-grow e flex-shrink, essas duas configurações são usadas nos itens do container, explicando de forma simples o grow é o quanto pode crescer e o shrink o quanto pode encolher.
+É importante deixar o container configurado com wrap para garantir que o grow e o shrink funcionem corretamente.
+Por padrão essas configurações vem assim flex-shrink: 1 e flex-grow: 0;
+Basicamente essas configurações recebem dois valores principais, sendo eles "1" ligado e "0" desligado;
+tem como colocar valores maiores que 1, fazendo isso nos fazemos com que o computador faça um calculo pra saber o quanto mais o elemnto com maior valor deve expandir ou diminuir com base nos outros, por exemplo se temos um item com grow 1, e um item com grow 2, o item com grow dois vai expandir o dobro pois o maior elemento antes dele tem grow 1.
+
+=============Usando o shorthand Flex==============
+
+Esse shorthand define o flex-grow, flex-shrink e basis, exatamente nessa ordem.
+Caso eu deixe de definir alguma das configurações nessa shorthand os valores não definidos serão os valores padrões de cada configuração.
+
+algumas simplificações para essa shorthand -->
+    --flex: initial (0 1 auto);
+    --flex: none (0 0 auto);
+    --flex: auto (1 1 auto);
